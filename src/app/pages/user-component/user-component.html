@@ -1,5 +1,15 @@
 <h2>USUARIOS</h2>
 
-<p>Total: {{ usuarios.length }}</p>
+<p>Total: {{ usuarios().length }}</p>
 
-<pre>{{ usuarios | json }}</pre>
+<table>
+  <tbody>
+    @for (usuario of usuarios(); track usuario.id) {
+      <tr>
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.name }}</td>
+        <td>{{ usuario.email }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
