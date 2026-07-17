@@ -1,0 +1,20 @@
+<h2>USUARIOS</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (usuario of usuarios; track usuario.id){
+            <tr>
+                <td>{{usuario.id}}</td>
+                <td>{{usuario.name}}</td>
+                <td>{{usuario.email}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
