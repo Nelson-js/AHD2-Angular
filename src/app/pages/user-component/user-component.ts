@@ -1,7 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { UserService } from '../../services/user';
 import { UserModel } from '../../models/user';
-import { ConstantPool } from '@angular/compiler';
 import { CommonModule } from '@angular/common';
 
 @Component({

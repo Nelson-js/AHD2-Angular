@@ -1,19 +1,5 @@
 <h2>USUARIOS</h2>
-<p>Total usuarios: {{ usuarios.length }}</p>
 
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Correo</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let usuario of usuarios">
-            <td>{{ usuario.id }}</td>
-            <td>{{ usuario.name }}</td>
-            <td>{{ usuario.email }}</td>
-        </tr>
-    </tbody>
-</table>
+<p>Total: {{ usuarios.length }}</p>
+
+<pre>{{ usuarios | json }}</pre>
