@@ -18,11 +18,16 @@ export class UserComponent implements OnInit{
   usuarios: UserModel[] = [];
 
   ngOnInit(): void {
-    this.servicioUsuario.obtenerTodosUsuarios().subscribe({
-      next: (datos) => {
-        this.usuarios = datos;
-      }
-    })
-  }
+  console.log('ngOnInit');
+
+  this.servicioUsuario.obtenerTodosUsuarios().subscribe({
+    next: (datos) => {
+      console.log('Datos:', datos);
+      this.usuarios = datos;
+      console.log('Cantidad:', this.usuarios.length);
+    },
+    error: (err) => console.error(err)
+  });
+}
 
 }
