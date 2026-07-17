@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-user-component',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './user-component.html',
   styleUrl: './user-component.css',
