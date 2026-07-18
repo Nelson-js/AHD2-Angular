@@ -16,5 +16,9 @@ export class UserService {
   obtenerTodosUsuarios(): Observable<UserModel[]>{
     return this.http.get<UserModel[]>(this.apiUrl);
   }
+  //Método Update usuario
+
+
+  //Método registrar usuario
 
 }
